@@ -2,7 +2,7 @@
 # https://github.com/CrimsonRay/slender
 
 baseurl = "http://skcks.pw"
-title = "Slender"
+title = "数个树歌"
 languageCode = "zh-CN"
 MetaDataFormat = "toml"
 theme = "slender"
@@ -27,7 +27,7 @@ PaginatePath = "/"
     colorscheme = "white"
 
     # Tagline; HTML accepted here. Keep it concise.
-    tagline = "for Hugo"
+    tagline = "Just Another Developer<br />Focus On Awesome Technology"
 
     # Footer; Markdown accepted here.
     footer = "Copyright 2016 &copy; 数个树歌"
@@ -37,12 +37,13 @@ PaginatePath = "/"
     # This will be overridden by whatever is set by the page or post,
     # defined by `description` and `keywords` variables in the front matter
     # of the markdown file.
-    description = "Example site for Slender, a minimalist theme for Hugo."
-    keywords = "hugo, slender, minimalist, theme"
+    description = "数个树歌的装逼专用博客，不喜勿喷。"
+    keywords = "java,android,iOS,html5,hybird app,mobile developer"
 
     # Social links, must be full URLs (e.g. https://github.com/CrimsonRay/).
     # Remove, comment, or leave blank any field to leave them out.
     email = "mailto:skcks@live.com"
+    weibo = "http://www.weibo.com/n00n"
     #github = "url-to-your-github"
     #bitbucket = "url-to-your-bitbucket"
     #twitter = "url-to-your-twitter"
@@ -65,7 +66,25 @@ PaginatePath = "/"
     weight     = 0
 
     [[menu.main]]
+    identifier = "technology"
+    name       = "技术"
+    url        = "/technology/"
+    weight     = 1
+
+    [[menu.main]]
+    identifier = "live"
+    name       = "生活"
+    url        = "/life/"
+    weight     = 2
+
+    [[menu.main]]
+    identifier = "hobby"
+    name       = "兴趣"
+    url        = "/hobby/"
+    weight     = 3
+
+    [[menu.main]]
     identifier = "about"
     name       = "关于我"
-    url        = "about/"
-    weight     = 1
+    url        = "/about/"
+    weight     = 4

@@ -4,4 +4,6 @@ draft = true
 title = "let's start from here"
 
 +++
-###new begining for future!
+
+## 作为一个有逼格的攻城师，怎么能容忍没有博客的残忍。
+new begining for future, just start from here...

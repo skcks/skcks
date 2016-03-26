@@ -7,6 +7,9 @@
 		{{ with .Site.Params.sidebar.twitter }}
 		<li><a href="//twitter.com/{{ . }}" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 		{{ end }}
+		{{ with .Site.Params.sidebar.weibo }}
+		<li><a href="//weibo.com/{{ . }}" target="_blank" class="icon fa-weibo"><span class="label">Twitter</span></a></li>
+		{{ end }}
 		{{ with .Site.Params.sidebar.github }}
 		<li><a href="//github.com/{{ . }}" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
 		{{ end }}
