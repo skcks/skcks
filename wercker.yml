@@ -19,8 +19,20 @@ build:
     # Steps make up the actions in your pipeline
     # Read more about steps on our dev center:
     # http://devcenter.wercker.com/docs/steps/index.html
-  steps:
-    - arjen/hugo-build:
-        version: "0.15"
-        theme: slender
-        flags: --buildDrafts=true
+    steps:
+        - arjen/hugo-build:
+            version: "0.15"
+            theme: slender
+            flags: --buildDrafts=true
+deploy:
+    steps:
+        - install-packages:
+            packages: git ssh-client
+        - add-ssh-key:
+            keyname: CODING_SSH
+        - add-to-known_hosts:
+            hostname: git.coding.net
+            fingerprint: 98:ab:2b:30:60:00:82:86:bb:85:db:87:22:c4:4f:b1
+        - lowwor/coding-pages:
+            domain: skcks.pw
+            basedir: public
