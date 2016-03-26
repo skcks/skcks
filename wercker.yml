@@ -32,7 +32,7 @@ deploy:
             keyname: CODING_SSH
         - add-to-known_hosts:
             hostname: git.coding.net
-            fingerprint: 98:ab:2b:30:60:00:82:86:bb:85:db:87:22:c4:4f:b1
+            fingerprint: 80:3a:da:5f:d5:0a:58:9b:8e:bc:a0:24:86:f5:f2:b1
         - lowwor/coding-pages:
             domain: skcks.pw
             basedir: public
